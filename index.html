@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Janta Party</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            background-color: #808000;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgba(213, 235, 52);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>New India United Party</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#vision">Our Vision</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to the New India United Party (NIUP), a dynamic and visionary political force committed to shaping the future of our great nation. At NIUP, we believe in the transformative power of unity, innovation, and progressive ideals to build a New India that stands tall on the global stage.</p>
+    </section>
+
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>At the heart of our party lies a bold and inclusive vision for India's future. We envision a nation that thrives on the principles of equality, justice, and sustainable development. NIUP aims to foster an environment where every citizen, irrespective of their background, has the opportunity to contribute to and benefit from the country's progress.</p>
+    </section>
+
+    <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>New India United Party invites individuals who share our vision and passion for a progressive, united, and inclusive India to join us on this transformative journey. Together, we can build a New India that is prosperous, just, and resilient.Join NIUP today and be a part of the movement to shape a brighter future for our beloved nation.   
+        </p>
+    </section>
+
+    <section id="news">
+        <h2>News and Updates</h2>
+        <p>In a significant move towards fostering the next generation of leaders, the New India United Party unveiled its Youth Empowerment Initiative today. Recognizing the vital role young minds play in shaping the future, NIUP aims to provide a platform for youth engagement, skill development, and leadership training. The initiative includes mentorship programs, skill-building workshops, and avenues for active participation in civic affairs. The party leadership believes that empowering the youth is key to building a dynamic and progressive nation.</p>
+    </section>
+
+
+    <section id="home">
+            <style>
+                /* Add some basic styling for better presentation */
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                li {
+                    margin-bottom: 10px;
+                    border: 1px solid #f6f1f1;
+                    padding: 10px;
+                    overflow: hidden;
+                }
+            </style>
+
+            <h1>Election Results</h1>
+
+            <ul id="candidatesList">
+                <!-- The list of candidates will be dynamically generated here -->
+            </ul>
+
+            <script>
+                // Sample data for candidates and votes
+                const candidatesData = [
+                    { name: 'Rajendra Kumar', constituency: 'Sardarsahar', votes: 700 },
+                    { name: 'Ram Kumar', constituency: 'Sujangarh', votes: 1405 },
+                    { name: 'Sandeep', constituency: 'Taranagar', votes: 756 },
+                    { name: 'Sanjay Kumar', constituency: 'Ratangarh', votes: 459 },
+                    { name: 'Manoj Kumar', constituency: 'Saduplpur', votes: 356 },
+                    { name: 'Suresh Kumar', constituency: 'Neem Ka Thana', votes: 692 },
+                    { name: 'Balbeer', constituency: 'Fatehpur', votes: 148 },
+                    // Add more candidates as needed
+                ];
+
+                // Function to generate the list of candidates dynamically
+                function generateCandidatesList() {
+                    const candidatesList = document.getElementById('candidatesList');
+
+                    // Clear any existing content in the list
+                    candidatesList.innerHTML = '';
+
+                    // Iterate through the candidatesData array and create list items
+                    candidatesData.forEach(candidate => {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `<strong>${candidate.name}</strong> - ${candidate.constituency}, Votes: ${candidate.votes}`;
+                        candidatesList.appendChild(listItem);
+                    });
+                }
+
+                // Call the function to generate the initial list
+                generateCandidatesList();
+            </script>
+
+
+    <footer>
+        <p>&copy; 2023 Kumar Janta Party. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
